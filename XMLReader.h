@@ -10,10 +10,10 @@
 {
     NSMutableArray *dictionaryStack;
     NSMutableString *textInProgress;
-    NSError **errorPointer;
+    NSError *errorPointer;
 }
 
-+ (NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError **)errorPointer;
-+ (NSDictionary *)dictionaryForXMLString:(NSString *)string error:(NSError **)errorPointer;
++ (NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError *)errorPointer;
++ (NSDictionary *)dictionaryForXMLString:(NSString *)string error:(NSError *)errorPointer;
 
 @end
